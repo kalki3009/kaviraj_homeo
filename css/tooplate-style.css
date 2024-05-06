@@ -1055,6 +1055,24 @@ http://www.tooplate.com/view/2098-health
     }
   }
 
+/*--------------------------------------
+call button
+------------------------------------*/
+
+.bottom-left-object {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px; 
+    height: 100px;
+}
+@media only screen and (max-width: 600px) {
+    .bottom-left-object {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+}
   @media only screen and (max-width: 639px) {
     h1 {
       font-size: 3em;
