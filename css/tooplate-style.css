@@ -1060,17 +1060,20 @@ call button
 ------------------------------------*/
 
 .bottom-left-object {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    display:none;
+    position: relative;
+    bottom: 20px;
+    left: 20px;
     width: 100px; 
     height: 100px;
+    z-index: 1;
 }
 @media only screen and (max-width: 600px) {
     .bottom-left-object {
-        position: fixed;
-        bottom: 0;
-        left: 0;
+        display:block;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
     }
 }
   @media only screen and (max-width: 639px) {
