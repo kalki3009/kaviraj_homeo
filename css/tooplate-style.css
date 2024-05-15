@@ -1055,27 +1055,19 @@ http://www.tooplate.com/view/2098-health
     }
   }
 
-/*--------------------------------------
-call button
-------------------------------------*/
+  .call-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    z-index: 1000; /* Ensure the icon is on top of other elements */
+}
 
-.bottom-left-object {
-    display:none;
-    position: relative;
-    bottom: 20px;
-    left: 20px;
-    width: 100px; 
-    height: 100px;
-    z-index: 1;
+.call-btn img {
+    width: 50px; /* Adjust the size of the icon as needed */
+    height: auto;
 }
-@media only screen and (max-width: 600px) {
-    .bottom-left-object {
-        display:block;
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-    }
-}
+
   @media only screen and (max-width: 639px) {
     h1 {
       font-size: 3em;
@@ -1091,6 +1083,16 @@ call button
     #home h3 {
       font-size: 11px;
       letter-spacing: 1px;
+    }
+
+    .call-btn{
+      display: block;
+      opacity: 0.2;
+    }
+
+    .call-btn:hover{
+      display: block;
+      opacity: 1;
     }
 
   }
